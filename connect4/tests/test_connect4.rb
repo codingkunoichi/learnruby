@@ -1,10 +1,14 @@
 require_relative "../lib/connect4.rb"
-require "test/unit"
+require 'minitest/autorun'
 
-class TestNAME < Test::Unit::TestCase
+class TestConnect4 < MiniTest::Unit::TestCase
 
-  def test_sample
-    assert_equal(4, 2+2)
+  def test_welcome
+    assert(Connect4.new.welcome == true)
+  end
+
+  def test_welcome_message
+    assert_equal(true, Connect4.new.welcome)
   end
 
 end
