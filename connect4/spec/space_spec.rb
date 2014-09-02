@@ -8,9 +8,9 @@ module Connect4
         expect(space.value).to eq ''
       end
       
-      it "can be initialized with a value of 'R'" do
-        pending("Test to be completed") 
-        fail
+      it "can be initialized with any value such as 'Banana'" do
+        space = Space.new("Banana")
+        expect(space.value).to eq 'Banana'
       end
     end    
   end
